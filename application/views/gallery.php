@@ -14,9 +14,11 @@
                 <span class="myhead">Simple Image Gallery</span>
                 <span class="mynav">
                     <ul>
-                        <li><a href="/welcome.php">Home</a></li>
-                        <li><a href="/">Gallery</a></li>
-                        <li><a href="/about.php">About</a></li>
+
+                        <li><a href="/welcome">Home</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/about">About</a></li>
+
                     </ul>
                 </span>
             </div>
