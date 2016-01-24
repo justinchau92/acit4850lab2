@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * core/Images.php
+ *
+ * Generic domain model.
+ *
+
+ */
+class Images extends CI_Model {
+
+
+
+    // Constructor
+
+    function __construct()
+    {
+	parent::__construct();
+
+    }
+
+    function all()
+    {
+        $this->db->order_by("id", "desc");
+        $query = $this->db->get('images');
+        return $query->result_array();
+        
+    }
+    
+    function newest()
+    {
+        $this->db->order_by("id","desc");
+        $this->db->limit(3);
+        $query = $this->db->get('images');
+        return $query->result_array();
+    }
+
+
+
+}
+
+/* End of file MY_Model.php */
+/* Location: application/core/MY_Model.php */
